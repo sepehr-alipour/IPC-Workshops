@@ -1,14 +1,29 @@
-*****************************************************************************
-                              Reflection
-                          Workshop - #3 (P2)
-Full Name  : 
-Student ID#: 
-Email      : 
-Section    : 
+/*
+	==================================================
+	Workshop #3 (Part-2):
+	==================================================
+	Name   : Sepehr Alipour
+	ID     : 107296212
+	Email  : salipour2@myseneca.ca
+	Section: IPC 144 NMM
+*/
 
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-*****************************************************************************
+1. There are two selection constructors in order to match the month number to name of a month
+the first one is switch statement and the other one is if (conditional) statement 
 
+switch (month){
+	case 1:
+		printf("JAN");
+		break;
+	case 2:
+		printf ("FEB");
+		break;
+}
+
+if (month == 1){printf("JAN");}
+if (month == 2){printf("FEB");}
+
+2. There are three iteration constructors: while, do-while and for 
+In this case, I used do-while because I want to do something (getting input from the user and validating) until validation is failed.
+
+3. By walking through the code or running the code in debug mode and check the issues step by step.
