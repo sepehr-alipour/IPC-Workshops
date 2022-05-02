@@ -1,12 +1,43 @@
-*****************************************************************************
-                               Reflection
-                             Workshop - #6
-Full Name  : 
-Student ID#: 
+/*
+        ==================================================
+        Workshop #6 (Part-2):
+        ==================================================
+                Name   : Sepehr Alipour
+                ID     : 107296212
+                Email  : salipour2@myseneca.ca
+                Section: IPC 144 NMM
+*/
 
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-*****************************************************************************
 
+
+1. The ReportData structure has 9 members that include 6 double variables which are allocated 24 bytes (4 bytes per integer variable),
+and 3 integer variables that allocated 24 bytes ( 8 bytes per integer variable).
+Therefore it occupied at least 48 bytes of memory.
+Since we can use structures by address or passing information that the displayReportData is implemented by passing
+the information, we can improve optimize our code to pass the address of the struct and use the value of members that are allocated in the memory.
+
+2. We can define a structure member of CatFoodInfo and remove the same members from ReportData structure.
+struct ReportData {
+        struct CatFoodInfo catFoodInfo;
+        double lbsWeight;
+        double kgWeight;
+        double totalServing;
+        double costServing;
+        double costCalories;
+};
+
+void displayReportData(const struct ReportData reportData, const int record) {
+
+        printf("%07d %10.2lf %10.1lf %10.4lf %9d %8d %8.1lf %7.2lf %7.5lf",
+                reportData.catFoodInfo.sku,
+                reportData.catFoodInfo.price,
+                reportData.catFoodInfo.lbsWeight,
+                reportData.kgWeight,
+                reportData.grWeight,
+                reportData.catFoodInfo.calories,
+                reportData.totalServing,
+                reportData.costServing,
+                reportData.costCalories);
+
+
+}
