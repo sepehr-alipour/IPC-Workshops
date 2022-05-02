@@ -1,12 +1,32 @@
-*****************************************************************************
-                               Reflection
-                             Workshop - #4
-Full Name  : 
-Student ID#: 
+/*
+	==================================================
+	Workshop #4 (Part-2):
+	==================================================
+	Name   : Sepehr Alipour
+	ID     : 107296212
+	Email  : salipour2@myseneca.ca
+	Section: IPC 144 NMM
+*/
 
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-*****************************************************************************
 
+1. In this workshop, we have 3 arrays which are defined as: costs, financing and priorities that have a maximum of 10 length.
+The key here is the index of the array that user choose as a menu, for example for accessing the priorities, user choose a number between
+1 to 3 and the key here is the number of priorities that by iterating we can access items that are selected as priority
+
+2. Since indexes of arrays start from zero, the first index of iteration is 0. For example: to check selected finances by 'y'
+in array we should iterate and check from index 0 for all of items:
+for (i = 0; i < userItems; i++)
+{
+	if (financing[i] == 'y') {
+
+		hasFinance = 1; //set 1 to show notes
+	}
+
+
+}
+
+3. Imagine you have a group of chips in a packet (Pringles), each item in a packet are one item of the whole packet. You can count them up to down (1,2,3,...)
+As I mentioned before you have a packet of chips so you do not find chocolate from them.
+In computers, we have this sort of chips as an Array. The arrays in computer programming have the same types that you should count them from 0.
+So if you want to pick the third chips from the packet you can eat 2 chips and then you have access to the third one while in computers if you want access to
+the third item of the array you need to start from zero then first and the second one is our third item.
