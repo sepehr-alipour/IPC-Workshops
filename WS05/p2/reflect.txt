@@ -1,12 +1,30 @@
-*****************************************************************************
-                               Reflection
-                             Workshop - #5
-Full Name  : 
-Student ID#: 
+/*
+		==================================================
+		Workshop #5 (Part-2):
+		==================================================
+		Name   : Sepehr Alipour
+		ID     : 107296212
+		Email  : salipour2@myseneca.ca
+		Section: IPC 144 NMM
+*/
 
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-*****************************************************************************
 
+1. It helps us to collect a bunch of data like number of lives,treasures, bombs and etc 
+and access to them by iterating one for loop in search of parallel array.
+
+
+2. We need to define another struct that keeps array of movements and number of lives, treasures, moves and last position that define as:
+
+struct gameplay
+{
+int liveCount;
+int moveCount;
+int tresureCount;
+int lastPosition;
+int historyMovement[pathLength];
+}
+
+struct gameplay[maxPlays];
+
+3. The board section of the game needs more time to figure out what is the current state. I did this section by debugging and testing the block separately
+and checking by simple number to pass the block test.
