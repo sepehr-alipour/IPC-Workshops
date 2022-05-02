@@ -1,14 +1,23 @@
-*****************************************************************************
-                              Reflection
-                          Workshop - #2 (P2)
-Full Name  : 
-Student ID#: 
-Email      : 
-Section    : 
+/*
+		==================================================
+		Reflaction #2 (Part-2):
+		==================================================
+		Name   : Sepehr Alipour
+		ID     : 107296212
+		Email  : salipour2@myseneca.ca
+		Section: IPC 144 NMM
+*/
 
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-*****************************************************************************
+1. because rational numbers are not able to represented accurately in binary representation
+2.
+	a) 0 for Even numbers and 1 for Odd number
+	b) 0, 1 and 2
+	c) 0 ... 99
+3.
+int totalSlices = 11 * 12; //132
+int estimatedSlicesConsumed = 21 * 3; //63
+int wholePizzasEaten = estimatedSlicesConsumed / 12; //5 pizza eated
+int extraSlicesNeeded = estimatedSlicesConsumed % 12; // 3 slices
 
+4.
+Because floating points has approximately value and it is easy to calculate numbers in computer arithmetic in an integer value and we are confident that the value is safe in integer 
